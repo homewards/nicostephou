@@ -32,6 +32,12 @@ p.two:hover + img{
 
 }
 
+.logo {
+    position: fixed;
+    top: 2%;
+    width: 200px;
+}
+
 button.accordion {
     background-color: #eee;
     color: #444;
@@ -195,9 +201,7 @@ bottom: 2%;
 max-width: 500px;
     }
 
-.logo {
-    max-width: 200px;
-}
+
 
 
 
