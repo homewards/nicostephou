@@ -55,7 +55,7 @@ div.panel {
 
 
 h1 {
-    font-size: 35px;
+    font-size: 30px;
     padding-left: 20px;
     padding-top: 0;
     padding-bottom: 0;
@@ -65,7 +65,7 @@ h1 {
 }
 
 p {
-    font-size: 35px;
+    font-size: 30px;
     padding-left: 20px;
     padding-right: 10px;
     margin: 0;
@@ -76,7 +76,7 @@ p {
 }
 
 a {
-    font-size: 35px;
+    font-size: 30px;
     padding-left: 20px;
     padding-right: 10px;
     margin: 0;
@@ -187,7 +187,7 @@ a:active {
 .mobile-image {display: none;}
 @media screen and (max-width:700px) {
     .mobile-image {display: block;
-position: absolute;
+position: fixed;
 top: 2%;
 right: 2%
 left: 2%;
