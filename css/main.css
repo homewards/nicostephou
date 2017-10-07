@@ -8,20 +8,20 @@
 }
 
 * {
-font-family: 'Chivo', sans-serif;
+font-family: 'Space Mono', sans-serif;
 }
 
 body {
-background: linear-gradient(270deg, #fdfdfd, #000000, #eae9dd);
+background: linear-gradient(269deg, #ffffff, #ffffff, #000000);
 background-size: 600% 600%;
 
-animation: AnimationName 40s ease infinite;
+animation: AnimationName 55s ease infinite;
 
 }
 
 @keyframes AnimationName { 
     0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
+    50%{background-position:100% 51%}
     100%{background-position:0% 50%}
 }
 
@@ -51,9 +51,9 @@ p.two:hover + img{
 .logo {
     display: inline;
     position: fixed;
-    top: 4%;
-    padding-left: 30px;
-    width: 167px;
+    top: 5%;
+    padding-left: 31px;
+    width: 223px;
 }
 
 button.accordion {
@@ -79,18 +79,20 @@ div.panel {
 
 
 h1 {
-    font-size: 27px;
+    font-size: 24px;
     padding-left: 30px;
     padding-top: 0;
     padding-bottom: 0;
     padding-right: 0;
     margin: 0;
     color: black;
+    letter-spacing: 1.5px;
+    line-height: 110%;
 }
 
 p {
-    font-size: 27px;
-    padding-left: 20px;
+    font-size: 22px;
+    padding-left: 10px;
     padding-right: 10px;
     margin: 0;
     padding-top: 0;
@@ -98,10 +100,11 @@ p {
     line-height: 130%;
     color: black;
    cursor: e-resize;
+   letter-spacing: 1px;
 }
 
 a {
-    font-size: 27px;
+    font-size: 22px;
     padding-left: 20px;
     padding-right: 10px;
     margin: 0;
@@ -109,6 +112,7 @@ a {
     padding-bottom: 0;
     line-height: 130%;
     color: black;
+    letter-spacing: 1px;
 }
 
 p:hover {
