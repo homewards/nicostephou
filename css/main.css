@@ -37,10 +37,13 @@ p.two:hover + img{
 }
 
 
+
 .logo {
+    display: inline;
     position: fixed;
-    top: 2%;
-    width: 200px;
+    top: 5%;
+    left: 40px;
+    width: 167px;
 }
 
 button.accordion {
@@ -67,7 +70,7 @@ div.panel {
 
 h1 {
     font-size: 27px;
-    padding-left: 20px;
+    padding-left: 30px;
     padding-top: 0;
     padding-bottom: 0;
     padding-right: 0;
