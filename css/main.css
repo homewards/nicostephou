@@ -51,8 +51,8 @@ p.two:hover + img{
 .logo {
     display: inline;
     position: fixed;
-    top: 5%;
-    left: 40px;
+    top: 4%;
+    padding-left: 30px;
     width: 167px;
 }
 
@@ -97,6 +97,7 @@ p {
     padding-bottom: 0;
     line-height: 130%;
     color: black;
+   cursor: e-resize;
 }
 
 a {
