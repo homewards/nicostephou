@@ -12,17 +12,18 @@ font-family: 'Space Mono', sans-serif;
 }
 
 body {
-background: linear-gradient(269deg, #ffffff, #ffffff, #000000);
-background-size: 600% 600%;
+background: white;
+background: linear-gradient(71deg, #ffffff, #ffffff, #ffffff, #000000, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff);
+background-size: 2800% 2800%;
 
-animation: AnimationName 55s ease infinite;
+animation: AnimationName 11s ease infinite;
 
 }
 
 @keyframes AnimationName { 
-    0%{background-position:0% 50%}
-    50%{background-position:100% 51%}
-    100%{background-position:0% 50%}
+    0%{background-position:0% 0%}
+    50%{background-position:93% 100%}
+    100%{background-position:0% 0%}
 }
 
 img{
