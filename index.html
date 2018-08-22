@@ -13,10 +13,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="https://thumb.ibb.co/gNoVv5/favicon.png" type="image/x-icon">
 <link rel="stylesheet" type="text/css" href="css/main.css">
-
+<script src="css/jquery-1.8.3.js"></script>
 
 
 <style>
+
+.content {
+  display:none;
+}
+
+.preload {
+  margin:0;
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin-right: -50%;
+  transform:translate(-50%, -50%);
+}
+
 
 body,h1,h2,h3,h4,h5 {font-family: "Space Mono", sans-serif}
 body {font-size:16px; letter-spacing: 1px; line-height: 1;}
@@ -80,6 +94,10 @@ border: none;
 </style>
 </head>
 <body>
+
+   <div class="preload">
+      <img src="images/eye2.gif" />
+    </div>
 
   <!-- Modal for full size images on click-->
   <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
@@ -679,6 +697,14 @@ The performance at Thkio Ppalies will lasted for three hours. The crowd was able
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="css/main.js"></script>
 <script>
+
+
+    $(function() {
+    $(".preload").fadeOut(2000, function() {
+      $(".content").fadeIn(1000);
+    });
+  });
+
 window.onscroll = function() {myFunction()};
 
 var navbar = document.getElementById("navbar");
