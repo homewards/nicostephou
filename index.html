@@ -1,89 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html class="no-js">
 <title>Nico Stephou</title>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta charset='UTF-8'>
+<link href="https://fonts.googleapis.com/css?family=Montaga&display=swap" rel="stylesheet">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Space+Mono">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+
   <link rel="icon" href="images/he.png">
 <meta property="og:title" content="Nico Stephou - Graphic Designer, Visual Artist" />
 <meta property="og:type" content="info" />
 <meta property="og:url" content="wwww.nicostephou.com" />
 <meta property="og:image" content="https://preview.ibb.co/n4Xsk9/Screen_Shot_2018_08_30_at_11_49_58_AM.png"/>
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="https://thumb.ibb.co/gNoVv5/favicon.png" type="image/x-icon">
-<link rel="stylesheet" type="text/css" href="css/main.css">
-</head>
 
 <style>
-
-body,h1,h2,h3,h4,h5 {font-family: "Space Mono", sans-serif}
-body {font-size:16px; letter-spacing: 1px; line-height: 1;}
-.w3-half img{margin-bottom:0px;margin-top:0px:margin-right:0px;margin-left:0px;padding:none;}
-body {
-  margin: 0;
-  font-size: 28px;
-  background-color: white;
-  color: black;
-
-}
-
-
-
-}
-.header {
-  color: white;
-}
-
-#navbar {
-  overflow: hidden;
-}
-
-#navbar a {
-  float: left;
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 8px 12px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-#navbar a:hover {
-  background-color: black;
-  color: white;
-}
-
-#navbar a.active {
-  color: black;
-}
-
-.content {
-  padding: 16px;
-}
-
-.sticky {
+/* Paste this css to your style sheet file or under head tag */
+/* This only works with JavaScript, 
+if it's not present, don't show loader */
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
   position: fixed;
-  top: 0;
+  left: 0px;
+  top: 0px;
   width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url(images/loader-64x/Preloader_2.gif) center no-repeat #fff;
 }
-
-.sticky + .content {
-  padding-top: 60px;
-}
-
-hr {
-height: 1px;
-color: #424242;
-background-color: white;
-border: none;
-}
-
 </style>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+<script>
+  //paste this code under head tag or in a seperate js file.
+  // Wait for window load
+  $(window).load(function() {
+    // Animate loader off screen
+    $(".se-pre-con").fadeOut("slow");;
+  });
+</script>
+
+</head>
+
+
 </head>
 <body>
 
-
+<div class="se-pre-con"></div>
   <!-- Modal for full size images on click-->
   <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
     <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
@@ -97,9 +66,9 @@ border: none;
 <!-- HEADER -->
 <div  id="top">
 </div>
-
+<br>
   <div class="w3-third w3-container less header">
-    <h1 class="w3-large"><b>Nico Stephou</b></h1>
+    <h1 class="w3-xlarge"><b>Nico Stephou</b></h1>
 </div>
 
   <div class="w3-third w3-container less header">
@@ -110,7 +79,7 @@ border: none;
     </div>
 
      <div class="w3-third w3-container less header">
-      <h1 class="w3-small">Graphic designer, Art director as well as a multidisciplinary artist from Cyprus. As a designer he is working on identities, printed matter, digital projects and visual research. As an art director he has worked for multiple foundations, record labels and art projects. <br><br>He has also co-founded the community platform and record label <a href="https://www.honestelectronics.club/">Honest Electronics</a> and the yearly festival “The Gathering”.<br>
+      <h1 class="w3-small">Graphic designer, art director as well as a multidisciplinary artist from Cyprus. As a designer he is working on identities, printed matter, digital projects and visual research. As an art director he has worked for multiple foundations, record labels and art projects. <br><br>He has also co-founded the community platform and record label <a href="https://www.honestelectronics.club/">Honest Electronics</a> and the yearly festival “The Gathering”.<br>
  <br>In 2017 he has graduated from the Graphic Design Department of "Gerrit Rietveld Academie" in Amsterdam, Netherlands.</h1>
 
   </div>
@@ -121,13 +90,12 @@ border: none;
 
 <!-- NAVBAR -->
 <div id="navbar" style="margin-top:0px">
-
   <div class="w3-third">
+    <br>
   <img src="images/nslogo.png" style="max-width: 90px">
   </div>
 
   <div class="w3-third"> 
-    <a href="#" onclick="w3_close()" class="w3-small ">Design</a> 
 
     <a href="https://soundcloud.com/raw-silver" target="_blank" onclick="w3_close()" class="w3-small ">Sound</a> 
     <a href="https://www.instagram.com/currenttribal/" target="_blank" onclick="w3_close()" class="w3-small">Tattoo</a>
@@ -157,21 +125,43 @@ border: none;
 </div>
 
   <div class="w3-third w3-container">
-    <h1 class="w3-large"><b>Minerals</h1>
-    <h1 class="w3-small"><b>Event Poster for mjut Club in Leipzig</h1>
+    <h1 class="w3-large"><b>Minerals, MJUT Club, Leipzig</h1>
+      <br>
+    <h1 class="w3-small"><b>Custom Typography, Logo, Posters</h1>
+      <br>
+     <h1 class="w3-small"><b>"The idea behind Minerals is to create a space where music and creativity in any shape will melt together. We want to bring you an out-of-the-ordinary club experience, infused with the soundtrack of the vibe that every night is dedicated to."</h1> 
   </div>
-
-
-
   <div class="w3-container less">
 <br>
 <br>
 </div>
 
+ <div class="w3-container less">
+<br>
+<br>
+</div>
+<div>
+      <div class="w3-third">
+             <br>
+                 </div>
+
+    <div class="w3-twothird">
+      <img src="images/minerals/minlo.png" style="width:100%" onclick="onClick(this)">
+      <br>
+      <br>
+      <br>
+    </div>
+
+
   <div>
-    <div>
+
+           <div class="w3-third">
+      <img src="images/minerals/poster2.png" style="width:100%" onclick="onClick(this)">
+    </div>
+    <div class="w3-twothird">
       <img src="images/minerals/poster.png" style="width:100%" onclick="onClick(this)">
     </div>
+
 
   <div class="w3-container less">
 <br>
@@ -190,14 +180,32 @@ border: none;
 </div>
 
   <div class="w3-third w3-container">
-    <h1 class="w3-large"><b>2019 Calendar</h1>
-    <h1 class="w3-small"><b>Astronomical Facts & Illustrations</h1>
+    <h1 class="w3-large"><b>S//IP Club, Nicosia</h1>
+      <br>
+    <h1 class="w3-small"><b>Art Direction, Logo, Posters</h1>
+      <br>
+      <h1 class="w3-small" >"In the centre of Nicosia emerges something set to fill the void, and push further than ever before; something true to the essence of club culture, where racism, sexism and homophobia do not exist."</h1>
   </div>
 
+  <div class="w3-container less">
+<br>
+<br>
+</div>
+</div>
+<div>
+      <div class="w3-third">
+             <br>
+                 </div>
+
+    <div class="w3-twothird">
+      <img src="images/sllip/logo.png" style="width:70%" onclick="onClick(this)">
+      <br>
+    </div>
+
+
  <div class="w3-third w3-container">
-    <h1 class="w3-small" >This special calendar of 2019 features illustrations and facts about astronomical events. It is made to draw attention to the circles of celestial objects around us. All visual and typographical content is designed with love and care by Nico Stephou in Berlin. </h1>
-    <br>
-    <a href="https://nico-stephou.myshopify.com/products/2019-calendar-astronomical-facts-illustrations" target="_blank" class="w3-medium"><mark>BUY NOW<mark></a>
+
+<br>
   </div>
 
   <div class="w3-container less">
@@ -207,10 +215,10 @@ border: none;
 
   <div>
     <div class="w3-half">
-      <img src="images/cal/cal1.png" style="width:100%" onclick="onClick(this)">
+      <img src="images/sllip/dec.png" style="width:100%" onclick="onClick(this)">
     </div>
     <div class="w3-half">
-      <img src="images/cal/cal2.png" style="width:100%" onclick="onClick(this)">
+      <img src="images/sllip/jan.png" style="width:100%" onclick="onClick(this)">
     </div>
 
   <div class="w3-container less">
@@ -225,49 +233,51 @@ border: none;
 <hr>
 
 <!-- Honest -->
-  <div class="w3-third w3-container"id="honest">
-    <h1 class="w3-large">Honest Electronics</h1>
-</div>
 
-  <div class="w3-third w3-container">
-    <h1 class="w3-large"><b>Dishonest</h1>
-    <h1 class="w3-small"><b>Art Direction<br>Graphic Design<br>Promotion</b></h1>
-  </div>
+<div class="w3-container">
 
- <div class="w3-third w3-container">
-    <h1 class="w3-small" >Dishonest is the dance oriented side of Honest Electronics record label. The party will be a 24h outdoor rave experience, by the lake of Tamassos in Nicosia District.</h1>
-    <a href="http://www.honestelectronics.info" target="_blank" class="w3-small">Visit Website</a>
-  </div>
-
-  <div class="w3-container less">
-<br>
-<br>
-</div>
-
-  <div>
-    <div class="w3-third">
-      <img src="images/p1.jpg" style="width:100%" onclick="onClick(this)">
-    </div>
-    <div class="w3-third">
-      <img src="images/p2.jpg" style="width:100%" onclick="onClick(this)">
-    </div>
-        <div class="w3-third">
-      <img src="images/p3.jpg" style="width:100%" onclick="onClick(this)">
-    </div>
-
-  <div class="w3-container less">
-<br>
-<br>
-<br>
-</div>
-
-
-<hr>
-
-<!-- Honest -->
-  <div class="w3-third w3-container"id="honest">
+  <div class=" w3-third w3-container">
     <img src="images/helogo.png" style="width:40%">
 </div>
+
+  <div class=" w3-third w3-container">
+    <h1 class="w3-large"><b>The Gathering 4!</h1>
+    <h1 class="w3-small"><b>Art Direction<br>Graphic Design</b></h1>
+</div>
+
+  <div class=" w3-third w3-container">
+    <h1 class="w3-large"></h1>
+</div>
+
+</div>
+
+  <div class="w3-container less">
+<br>
+<br>
+<br>
+</div>
+
+  <div>
+    <div class="w3-half">
+      <img src="images/honest/ga5.png" style="width:100%" onclick="onClick(this)">
+    </div>
+     <div class="w3-half">
+      <img src="images/honest/ga5i.png" style="width:100%" onclick="onClick(this)">
+    </div>
+     
+</div>
+  <div class="w3-container less">
+<br>
+<br>
+<br>
+</div>
+<hr>
+
+<!-- Honest -->
+  <div class="w3-third w3-container"id="honest">
+<br>
+</div>
+
 
   <div class="w3-third w3-container">
     <h1 class="w3-large"><b>The Gathering III</h1>
@@ -324,11 +334,37 @@ border: none;
 <br>
 </div>
 
+<hr>
 
-  <div class=" w3-third w3-container" style="margin-top:50px">
-    <h1 class="w3-large"></h1>
-
+  <div class="w3-third w3-container"id="honest">
+    <h1 class="w3-large">Honest Electronics</h1>
 </div>
+
+  <div class="w3-third w3-container">
+    <h1 class="w3-large"><b>Dishonest 2018</h1>
+    <h1 class="w3-small"><b>Art Direction<br>Graphic Design<br>Promotion</b></h1>
+  </div>
+
+ <div class="w3-third w3-container">
+    <h1 class="w3-small" >Dishonest is the dance oriented side of Honest Electronics record label. The party will be a 24h outdoor rave experience, by the lake of Tamassos in Nicosia District.</h1>
+    <a href="http://www.honestelectronics.info" target="_blank" class="w3-small">Visit Website</a>
+  </div>
+
+  <div class="w3-container less">
+<br>
+<br>
+</div>
+
+  <div>
+    <div class="w3-third">
+      <img src="images/p1.jpg" style="width:100%" onclick="onClick(this)">
+    </div>
+    <div class="w3-third">
+      <img src="images/p2.jpg" style="width:100%" onclick="onClick(this)">
+    </div>
+        <div class="w3-third">
+      <img src="images/p3.jpg" style="width:100%" onclick="onClick(this)">
+    </div>
 
   <div class="w3-container less">
 <br>
@@ -338,39 +374,37 @@ border: none;
 
 
 <hr>
-<div class="w3-container">
 
-  <div class=" w3-third w3-container">
+  <div class=" w3-third w3-container" style="margin-top:50px">
     <h1 class="w3-large"></h1>
-</div>
-
-  <div class=" w3-third w3-container">
-    <h1 class="w3-large"><b>The Gathering II</h1>
-    <h1 class="w3-small"><b>Art Direction<br>Graphic Design</b></h1>
-</div>
-
-  <div class=" w3-third w3-container">
-    <h1 class="w3-large"></h1>
-</div>
 
 </div>
+
+<div class="w3-third w3-container">
+    <h1 class="w3-large"><b>Dishonest 2018</h1>
+    <h1 class="w3-small"><b>Art Direction<br>Graphic Design<br>Promotion</b></h1>
+  </div>
+
+ <div class="w3-third w3-container">
+    <h1 class="w3-small" >Dishonest is the dance oriented side of Honest Electronics record label. The party will be a 24h outdoor rave experience, by the lake of Tamassos in Nicosia District.</h1>
+    <a href="http://www.honestelectronics.info" target="_blank" class="w3-small">Visit Website</a>
+  </div>
 
   <div class="w3-container less">
-<br>
 <br>
 <br>
 </div>
 
   <div>
     <div class="w3-third">
-      <img src="images/honest/poster-ii.jpg" style="width:100%" onclick="onClick(this)">
+      <img src="images/p1.jpg" style="width:100%" onclick="onClick(this)">
     </div>
-    <div class="w3-twothird">
-<iframe style="width:100%; height:600px;" src="//e.issuu.com/embed.html#3933776/63843089" frameborder="0" allowfullscreen></iframe>
+    <div class="w3-third">
+      <img src="images/p2.jpg" style="width:100%" onclick="onClick(this)">
     </div>
-     
-</div>
-
+        <div class="w3-third">
+      <img src="images/p3.jpg" style="width:100%" onclick="onClick(this)">
+    </div>
 
 
   <div class="w3-container less">
@@ -378,6 +412,7 @@ border: none;
 <br>
 <br>
 </div>
+
 
 <hr>
 <!-- Thkio Ppalies -->
@@ -573,9 +608,6 @@ The performance at Thkio Ppalies lasted for three hours. The crowd was able to w
 <iframe style="width:100%; height:800px;" src="//e.issuu.com/embed.html#3933776/63845137" frameborder="0" allowfullscreen></iframe>
   </div>
 
-   <div>
-      <img src="images/mo/prp.jpg" style="width:100%" onclick="onClick(this)">
-    </div>
 
 <div class="w3-container less">
 <br>
@@ -586,41 +618,9 @@ The performance at Thkio Ppalies lasted for three hours. The crowd was able to w
 
 
 <hr>
-<div class="w3-container less" id="mjmj">
 
-    <h1 class="w3-large w3-third">MJMJ Records</h1>
 
-   <div class="w3-third w3-container less" style="margin:0px;">
-     <h1 class="w3-large">Record Label</h1>
-     <br>
-    <h1 class="w3-small">Logo Design<br>Cassettes Designs (2015-17)</h1>
-    <br>
-  </div>
-   <div class="w3-third w3-container less" style="margin:0px;">
-   <img src="images/mjlogo.png" style="max-width: 80%">
-     <br>
-  </div>
-</div>
-<div class="w3-container less">
-<br>
-<br>
-<br>
-</div>
-
-<div class="w3-half">
-      <img src="images/ts1.jpg" style="width:100%" onclick="onClick(this)">
-    </div>
-<div class="w3-half">
-      <img src="images/ts2.jpg" style="width:100%" onclick="onClick(this)">
-    </div>
-<div class="w3-container less">
-<br>
-<br>
-<br>
-<br>
-</div>
-
-<img class="eye" src="images/rosesmall.gif">
+<img class="eye" src=" ">
 <br>
 <br>
 

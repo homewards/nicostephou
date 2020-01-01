@@ -1,3 +1,68 @@
+body,h1, h2,h3,h5 {
+font-family: 'Montaga', serif;
+
+  letter-spacing: 02px; 
+  line-height: 1;
+  color: white;
+  margin: 0;
+  background-color: black;
+
+}
+
+p {
+    font-size: 120px;
+}
+.w3-half img{margin-bottom:0px;margin-top:0px:margin-right:0px;margin-left:0px;padding:none;}
+
+}
+.header {
+  color: white;
+}
+
+#navbar {
+  overflow: hidden;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: white; 
+  text-align: center;
+  padding: 8px 12px;
+  text-decoration: none;
+}
+
+#navbar a:hover {
+  background-color: black;
+  color: white;
+}
+
+#navbar a.active {
+  color: black;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+hr {
+height: 1px;
+color: white;
+background-color: white;
+border: none;
+}
+
+
 .eye {
 	padding: none;
 	margin: none;
