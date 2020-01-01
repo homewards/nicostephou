@@ -9,14 +9,23 @@ font-family: 'Montaga', serif;
 
 }
 
-p {
-    font-size: 120px;
-}
+
 .w3-half img{margin-bottom:0px;margin-top:0px:margin-right:0px;margin-left:0px;padding:none;}
 
 }
 .header {
   color: white;
+}
+
+.loadingtext {
+
+}
+
+.loadingimage {
+  position: fixed;
+  top: 50%;
+  
+
 }
 
 #navbar {
