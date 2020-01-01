@@ -17,14 +17,12 @@ font-family: 'Montaga', serif;
   color: white;
 }
 
-.loadingtext {
 
-}
 
 .loadingimage {
   position: fixed;
   top: 50%;
-  
+
 
 }
 
@@ -106,3 +104,48 @@ border: none;
   top:3px; 
   left:48%; 
 }
+
+
+
+
+#bl1 {
+        -webkit-animation: rotation 300s infinite linear;
+        max-width: 100%;
+}
+
+#bl2 {
+        -webkit-animation: rotation 100s infinite linear;
+        max-width: 100%;
+}
+
+#bl3 {
+        -webkit-animation: rotation 500s infinite linear;
+        max-width: 100%;
+}
+
+#bl4 {
+        -webkit-animation: rotation 300s infinite linear;
+        max-width: 100%;
+}
+
+#bl5 {
+        -webkit-animation: rotation 300s infinite linear;
+        max-width: 100%;
+}
+
+
+
+@-webkit-keyframes rotation {
+        from {
+                -webkit-transform: rotate(0deg);
+        }
+        to {
+                -webkit-transform: rotate(359deg);
+        }
+}
+
+
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }

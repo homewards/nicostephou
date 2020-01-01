@@ -33,6 +33,70 @@ if it's not present, don't show loader */
   z-index: 9999;
   background: black;
 }
+
+#div1 {
+    width: 450px;
+    height: 450px;
+    position: absolute;
+    animation: mymove 17s infinite alternate;
+    animation-timing-function: linear;
+}
+#div2 {
+    width: 450px;
+    height: 450px;
+    position: absolute;
+        animation: mymovei 11s infinite alternate;
+        animation-timing-function: ease;
+
+}
+
+
+#div3 {
+    width: 450px;
+    height: 450px;
+    position: absolute;
+        animation: mymove 50s infinite alternate;
+        animation-timing-function: ease-in;
+}
+
+
+
+#div4 {
+    width: 450px;
+    height: 450px;
+    position: absolute;
+        animation: mymoveii 100s infinite alternate;
+        animation-timing-function: ease-out;
+}
+
+
+#div5 {
+    width: 450px;
+    height: 450px;
+    position: absolute;
+        animation: mymove 150s infinite alternate;
+        animation-timing-function: ease-in-out;
+}
+
+
+
+/* Standard syntax */
+@keyframes mymove {
+    from {left: 30px;}
+    to {left: 700px;}
+}
+
+@keyframes mymovei {
+    from {left: 100px;}
+    to {left: 600px;}
+}
+
+@keyframes mymoveii {
+    from {left: 300px;}
+    to {left: 500px;}
+}
+
+
 </style>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
@@ -129,6 +193,10 @@ if it's not present, don't show loader */
 
 <!-- 2019 Calendar -->
 
+
+
+
+
   <div class="w3-third w3-container"id="honest">
     <h1 class="w3-large"> </h1>
 </div>
@@ -145,6 +213,23 @@ if it's not present, don't show loader */
 <br>
 </div>
 
+<div id="div1">
+    <img id="bl1" src="images/rockery/b2.png">
+</div>
+<div id="div2">
+    <img id="bl2" src="images/rockery/b3.png">
+</div>
+<div id="div3">
+    <img id="bl3" src="images/rockery/b4.png">
+</div>
+
+<div id="div4">
+    <img id="bl4" src="images/rockery/b5.png">
+</div>
+
+<div id="div5">
+    <img id="bl5" src="images/rockery/b6.png">
+</div>
  <div class="w3-container less">
 <br>
 <br>
