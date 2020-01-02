@@ -149,3 +149,13 @@ border: none;
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+
+@media all and (max-width: 959px) {
+    #div1 {display:block;}
+    #div2 {display:block;}
+    #div3 {display:block;}
+    #div4 {display:block;}
+    #div5 {display:block;}
+    
+}
