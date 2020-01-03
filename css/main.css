@@ -1,8 +1,9 @@
 body,h1, h2,h3,h5 {
-font-family: 'Montaga', serif;
+font-family: 'Play', sans-serif;
+
 
   letter-spacing: 02px; 
-  line-height: 1;
+  line-height: 1.1;
   color: white;
   margin: 0;
   background-color: black;
