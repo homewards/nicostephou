@@ -4,9 +4,9 @@ font-family: 'Poppins', sans-serif;
 
   letter-spacing: 0.5px; 
   line-height: 1.4;
-  color: black;
+  color: white;
   margin: 0;
-  background-color: white;
+  background-color: black;
 
 }
 
@@ -45,11 +45,11 @@ font-family: 'Poppins', sans-serif;
 }
 
 #navbar a:hover {
-  color: black;
+  color: white;
 }
 
 #navbar a.active {
-  color: black;
+  color: white;
 }
 
 .content {
@@ -68,8 +68,8 @@ font-family: 'Poppins', sans-serif;
 
 hr {
 height: 0.5px;
-color: black;
-background-color: black;
+color: white;
+background-color: white;
 border: none;
 }
 
