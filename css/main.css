@@ -1,12 +1,12 @@
 body,h1, h2,h3,h5 {
-font-family: 'Play', sans-serif;
+font-family: 'Poppins', sans-serif;
 
 
-  letter-spacing: 02px; 
-  line-height: 1.1;
-  color: white;
+  letter-spacing: 0.5px; 
+  line-height: 1.4;
+  color: black;
   margin: 0;
-  background-color: black;
+  background-color: white;
 
 }
 
@@ -15,9 +15,13 @@ font-family: 'Play', sans-serif;
 
 }
 .header {
-  color: white;
+  color: black;
 }
 
+.center {
+  display: block;
+  margin-left:10px;
+}
 
 
 .loadingimage {
@@ -34,15 +38,14 @@ font-family: 'Play', sans-serif;
 #navbar a {
   float: left;
   display: block;
-  color: white; 
+  color: black; 
   text-align: center;
   padding: 8px 12px;
   text-decoration: none;
 }
 
 #navbar a:hover {
-  background-color: black;
-  color: white;
+  color: black;
 }
 
 #navbar a.active {
@@ -64,9 +67,9 @@ font-family: 'Play', sans-serif;
 }
 
 hr {
-height: 1px;
-color: white;
-background-color: white;
+height: 0.5px;
+color: black;
+background-color: black;
 border: none;
 }
 
